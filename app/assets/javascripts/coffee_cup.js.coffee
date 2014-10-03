@@ -16,7 +16,7 @@ class window.CoffeeCup
       @options[k] = opts[k]
 
   name: ->
-    @className = this.constructor.toString().match(/\s[^\(]*/)[0]..replace(/^\s+|\s+$/g, '') unless @className
+    @className = this.constructor.toString().match(/\s[^\(]*/)[0].replace(/^\s+|\s+$/g, '') unless @className
     @className
 
   log: (msg) ->
